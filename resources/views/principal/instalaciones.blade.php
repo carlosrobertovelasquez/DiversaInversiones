@@ -16,15 +16,15 @@
                     <span class="menu"><img src="images/menu.png" alt=" " /></span>
                     <nav class="link-effect-3" id="link-effect-3">
                         <ul class="nav1 nav nav-wil">
-                            <li class="active"><a data-hover="Principal" href="{{ url('principal?setFocus=true') }}">Principal</a></li>
-                            <li><a data-hover="Inversiones" href="{{ url('noticias?setFocus=true') }}">Inversiones</a></li>
-                            <li><a data-hover="Quienes Somos" href="{{ url('QuienesSomos?setFocus=true') }}" >Quienes Somos</a></li>
-                            <li><a data-hover="Instalaciones" href="{{ url('instalaciones?setFocus=true')}}">Instalaciones</a></li>
+                            <li ><a data-hover="Principal" href="{{ url('principal') }}">Principal</a></li>
+                            <li ><a data-hover="Inversiones" href="{{ url('noticias') }}">Inversiones</a></li>
+                            <li ><a data-hover="Quienes Somos" href="{{ url('QuienesSomos') }}" >Quienes Somos</a></li>
+                            <li class="active"><a data-hover="Instalaciones" href="{{ url('instalaciones')}}">Instalaciones</a></li>
                             
-                            <li><a data-hover="Contacto" href="{{ url('contacto?setFocus=true') }}">Contacto</a></li>
+                            <li><a data-hover="Contacto" href="{{ url('contacto') }}">Contacto</a></li>
                             <!--validacion de cerrar sesion-->
                             @if (Auth::guest())
-                                <li><a data-hover="Mi Cuenta" href="{{ url('login?setFocus=true') }}">Mi Cuenta</a></li>
+                                <li><a data-hover="Mi Cuenta" href="{{ url('/login') }}">Mi Cuenta</a></li>
                             @else
                                 <li class="dropdown">
                                     <a data-hover="{{ Auth::user()->name }} {{ Auth::user()->last_name }}" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} {{ Auth::user()->last_name }}<span class="caret"></span>
@@ -59,7 +59,7 @@
                 <div class="w3l_banner_logo">
                     <img src="images/Escudo_red.png" alt=" " class="img-responsive" />
                 </div>
-                <h3>Invierta Con Nosotros Somos la Mejor Soluccion</h3>
+                <h3>Invierta Con Nosotros somos La Mejor Solucion</h3>
                 <p>La educación trae consigo la oportunidad , y a su vez la inspiración.</p>
                 <div class="more">
                     <a href="#" class="hvr-underline-from-center" data-toggle="modal" data-target="#myModal">Filosofia</a>
@@ -70,7 +70,7 @@
                         <div class="modal-content">
                           <!--Boton Filosofia-->
                             <div class="modal-header">
-                                Ingresar
+                                Filosofia
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             </div>
                             <section>
@@ -88,39 +88,50 @@
         </div>
     </div>
 </div>
-
-
-
 <!-- banner-boton-imagen-text -->
-<div id="contenido" class="banner-bottom-image-text">
+<div id="about" class="banner-bottom-image-text">
 </br>
 <!--               Seccion de publicaciones               -->
-<div class="FondoPublicaciones">
-    <div id="CenterContent" class="CenterContent">
-          <h3 class="Titulo">NOSTROS</h3>
-        <div id="ContentIzquierda" class="ContentIzquierda">
-            <div class="Titulo2" >MISION
-            </div>
-            <br />
-                <p class="Texto1">Es misión de DIVERSAS INVERSIONES administrar y hacer crecer el patrimonio de nuestros inversionistas, mediante una asesoría basada en el conocimiento y la integridad de un excelente recurso humano
-                </p>
-                </br>
-                <div class="Linea"></div>
-                </br>
-        </div>  
-        <div id="ContentDerecha" class="ContentDerecha">
-        <div class="Titulo2" >VISION
-        </div>
-        <br />
-      <p class="Texto1">Ser el líder en excelencia en el servicio y atención al cliente, mediante asesoría personalizada y el desarrollo de inversiones y proyectos que agreguen valor a la gestión de sus carteras de inversión.
+<div class="FondoPublicacionesI">
+<div id="CenterContentI" class="CenterContentI">
+          <h3 class="TituloI">Instalaciones</h3>
+          <div class="Titulo2I" >Nuestro hogar</div><br />
+          <p class="TextoPresentacionI">La institución busca ofrecer un ambiente en el cual los estudiantes puedan estar seguros que nada malo les puede ocurrir dentro
+            de las mismas instalaciones, pero no solo se busca la protecccion si no que ademas de eso se busca un ambiente familiar en cual los estudiantes
+            tengan lo necesario para desarrollarse y disfrutar de su estancia en la institucion.
+           </p>
+           <div class="PresentacionI"><img src="images/Patio.jpg" width='100%' height="300" /></div>
 
-      </p>
-            </br>
-            <div class="Linea"></div>
-            </br>
-      
+     <div id="ContentIzquierdaI" class="ContentIzquierdaI">
+     </br><div class="LineaI"></div></br>
+       <div class="Titulo2I" >Sede Principal</div><br />
+       <div class="SedeA"><img src="images/SedeA.jpg"  width='100%' height='100%'/></div>
+     </br><div class="LineaI"></div></br>
+      <div class="Titulo2I" >Sede B</div><br />
+      <div class="SedeB"><img src="images/SedeB.jpg"  width='100%' height='100%'/></div>
+    </br><div class="LineaI"></div></br>
+      <p class="Texto1I">La institución educativa cuenta con los respectivos lugares que se necesitan para poder brindar una educacion de calidad como lo son:</p>
+      <div class="Titulo2I" >Biblioteca</div><br />
+      <div class="Biblioteca"><img src="images/Biblioteca.jpg"  width='100%' height="300"/></div>
+      <div class="Titulo2I" >Enfermeria</div><br />
+      <div class="Enfermeria"><img src="images/Enfermeria.jpg"  width='100%' height="300"/></div>
+     </div>
+
+     <div id="ContentDerechaI" class="ContentDerechaI">
+     </br><div class="LineaI"></div></br></br>
+      <div class="Titulo3I" >Sede C</div><br />
+      <div class="SedeC"><img src="images/SedeC.jpg" width='100%' height='100%' /></div>
+    </br><div class="LineaI"></div></br></br>
+      <div class="Titulo3I" >Sede D</div><br />
+      <div class="SedeD"><img src="images/SedeD.jpg" width='100%' height='100%' /></div>
+    </br><div class="LineaI"></div></br></br>
+      <p class="Texto2I">La institución educativa cuenta con lugares hechos solo con un fin y es la enseñanza un claro ejemplo la Sala de sistemas:</p>
+      <div class="Titulo3I" >Sala de informatica</div><br />
+      <div class="Sala1I"><img src="images/Salas1.jpg"  width='100%' height="300"/></div>
+      <div class="Sala2I"><img src="images/Salas2.jpg"  width='100%' height="300"/></div>
+     </div>
+
 </div>
- 
 </div>
 
 <!--           fin    Seccion de publicaciones               -->
@@ -128,10 +139,9 @@
 
 </div>
 
+
+
+
+
+
 @stop
-
-
-
-
-
-

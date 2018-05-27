@@ -17,10 +17,9 @@
                     <nav class="link-effect-3" id="link-effect-3">
                         <ul class="nav1 nav nav-wil">
                             <li ><a data-hover="Principal" href="{{ url('principal?setFocus=true') }}">Principal</a></li>
-                            <li ><a data-hover="Noticias" href="{{ url('noticias?setFocus=true') }}">Noticias</a></li>
+                            <li ><a data-hover="Inversiones" href="{{ url('noticias?setFocus=true') }}">Inversiones</a></li>
                             <li class="active"><a data-hover="Quienes Somos" href="{{ url('QuienesSomos?setFocus=true') }}" >Quienes Somos</a></li>
                             <li><a data-hover="Instalaciones" href="{{ url('instalaciones?setFocus=true')}}">Instalaciones</a></li>
-                            <li><a data-hover="Galeria" href="{{ url('GaleriaShow?setFocus=true') }}">Galeria</a></li>
                             <li><a data-hover="Contacto" href="{{ url('contacto?setFocus=true') }}">Contacto</a></li>
                             <!--validacion de cerrar sesion-->
                             @if (Auth::guest())
@@ -93,7 +92,7 @@
 </br>
 <!--               Seccion de publicaciones               -->
 <div class="FondoPublicaciones">
-<div id="CenterContent" class="CenterContent">
+    <div id="CenterContent" class="CenterContent">
           <h3 class="Titulo">¿Quienes Somos?</h3>
      <div id="ContentIzquierda" class="ContentIzquierda">
       <div class="QuienesSomos1"><img src="images/construccion.jpg" width='100%' height='auto' /></div>

@@ -3,6 +3,7 @@
 
 
 
+
 <!--Video, navegacion, menu y publicaciones principales-->
 <div data-vide-bg="video/srix">
     <div class="center-container">
@@ -16,12 +17,12 @@
                     <span class="menu"><img src="images/menu.png" alt=" " /></span>
                     <nav class="link-effect-3" id="link-effect-3">
                         <ul class="nav1 nav nav-wil">
-                            <li class="active"><a data-hover="Principal" href="{{ url('principal?setFocus=true') }}">Principal</a></li>
-                            <li><a data-hover="Inversiones" href="{{ url('noticias?setFocus=true') }}">Inversiones</a></li>
+                            <li ><a data-hover="Principal" href="{{ url('principal?setFocus=true') }}">Principal</a></li>
+                            <li ><a data-hover="Inversiones" href="{{ url('noticias?setFocus=true') }}">Inversiones</a></li>
                             <li><a data-hover="Quienes Somos" href="{{ url('QuienesSomos?setFocus=true') }}" >Quienes Somos</a></li>
                             <li><a data-hover="Instalaciones" href="{{ url('instalaciones?setFocus=true')}}">Instalaciones</a></li>
                             
-                            <li><a data-hover="Contacto" href="{{ url('contacto?setFocus=true') }}">Contacto</a></li>
+                            <li class="active"><a data-hover="Contacto" href="{{ url('contacto?setFocus=true') }}">Contacto</a></li>
                             <!--validacion de cerrar sesion-->
                             @if (Auth::guest())
                                 <li><a data-hover="Mi Cuenta" href="{{ url('login?setFocus=true') }}">Mi Cuenta</a></li>
@@ -59,7 +60,7 @@
                 <div class="w3l_banner_logo">
                     <img src="images/Escudo_red.png" alt=" " class="img-responsive" />
                 </div>
-                <h3>Invierta Con Nosotros Somos la Mejor Soluccion</h3>
+                <h3>Invierta Con nosotros Somos la Mejor Soluccion</h3>
                 <p>La educación trae consigo la oportunidad , y a su vez la inspiración.</p>
                 <div class="more">
                     <a href="#" class="hvr-underline-from-center" data-toggle="modal" data-target="#myModal">Filosofia</a>
@@ -70,7 +71,7 @@
                         <div class="modal-content">
                           <!--Boton Filosofia-->
                             <div class="modal-header">
-                                Ingresar
+                                Filosofia
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             </div>
                             <section>
@@ -88,50 +89,62 @@
         </div>
     </div>
 </div>
-
-
-
 <!-- banner-boton-imagen-text -->
-<div id="contenido" class="banner-bottom-image-text">
+<div class="banner-bottom-image-text" id="contenido">
 </br>
 <!--               Seccion de publicaciones               -->
-<div class="FondoPublicaciones">
-    <div id="CenterContent" class="CenterContent">
-          <h3 class="Titulo">NOSTROS</h3>
-        <div id="ContentIzquierda" class="ContentIzquierda">
-            <div class="Titulo2" >MISION
-            </div>
-            <br />
-                <p class="Texto1">Es misión de DIVERSAS INVERSIONES administrar y hacer crecer el patrimonio de nuestros inversionistas, mediante una asesoría basada en el conocimiento y la integridad de un excelente recurso humano
-                </p>
-                </br>
-                <div class="Linea"></div>
-                </br>
-        </div>  
-        <div id="ContentDerecha" class="ContentDerecha">
-        <div class="Titulo2" >VISION
-        </div>
-        <br />
-      <p class="Texto1">Ser el líder en excelencia en el servicio y atención al cliente, mediante asesoría personalizada y el desarrollo de inversiones y proyectos que agreguen valor a la gestión de sus carteras de inversión.
 
-      </p>
-            </br>
-            <div class="Linea"></div>
-            </br>
-      
+<head>
+   
+</head>
+</br>
+<div class="row">
+        <div class="col-md-5 col-md-offset-1">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                <p style='margin-left: 1em'><i><H3>Nos encontramos aqui!!</H3></i></p></br>
+                	<center>
+                	<form>
+    					
+					</form>
+                	</center>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-5 col-md-offset-0">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                 <p style='margin-left: 1em'><i><H3>Datos</H3></i></p></br></br>
+                	<form>
+                		<label type="Text" name="contact" style='margin-left: 1em'>
+    					<font size = +1>
+    					<i>Direccion: Cra 3ª Nº 48T - 02 Sur</i></p></br>
+    					<i>Telefono: 7711930</i></p></br>
+    					<i>Correo Electronico:	colrafa@gmail.com</i></p></br>
+    					<i>Rectora: Sra Maria Myriam Novoa Agualimpia</i></p></br>
+    					<i>Coordinadora Academica: Sra Nelly Patricia Criollo Castro</i></p></br></br></br>
+    					</font>
+					</form>
+				</div>
+			</div>
+		</div>
+
 </div>
- 
-</div>
+
+
+
 
 <!--           fin    Seccion de publicaciones               -->
 
 
 </div>
 
+
+
+
+
+
+
+
 @stop
-
-
-
-
-
-

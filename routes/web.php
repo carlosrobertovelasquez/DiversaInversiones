@@ -13,6 +13,10 @@
 Route::get('/', function () {
     return redirect()->route('principal');
 });
+//login logout routes...
+Route::get('login', 'Auth\AuthController@getLogin');
+Route::post('login', ['as' =>'login', 'uses' => 'Auth\AuthController@postLogin']);
+Route::get('logout', ['as' => 'logout', 'uses' => 'Auth\AuthController@getLogout']);
 
 //Principal
 Route::get('home', 'HomeController@index');
